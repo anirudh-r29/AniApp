@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">MiniPro</string>
     <string name="title_activity_main">Recyclerview</string>
+    <string name="Just_Example">This is an example string</string>
 </resources>

@@ -1,5 +1,6 @@
 package com.aniapps.minipro;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -26,8 +27,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        com.aniapps.minipro.Subject s = new com.aniapps.minipro.Subject("ES");
-        slist.add(s);
+
+
+
        /* FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -52,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
 
   private void addData()
     {
-        com.aniapps.minipro.Subject s = new com.aniapps.minipro.Subject("ES");
+        com.aniapps.minipro.Subject s = new com.aniapps.minipro.Subject("MAKRI");
         slist.add(s);
 
         s = new com.aniapps.minipro.Subject("CGM");
@@ -70,6 +72,7 @@ public class MainActivity extends AppCompatActivity {
 
 
          }
+
 
 
 
