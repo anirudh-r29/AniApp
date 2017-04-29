@@ -1,9 +1,12 @@
 package com.aniapps.minipro;
 
+import java.io.Serializable;
+
 /**
  * Created by USER on 02-04-2017.
  */
-public class Subject {
+public class Subject //implements Serializable
+ {
     private String title;
 
     public Subject()

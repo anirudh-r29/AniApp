@@ -1,5 +1,6 @@
 package com.aniapps.minipro;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -9,8 +10,12 @@ import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.View;
 
+import org.json.JSONObject;
+
+import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -54,7 +59,64 @@ public class MainActivity extends AppCompatActivity {
 
   private void addData()
     {
-        com.aniapps.minipro.Subject s = new com.aniapps.minipro.Subject("MAKRI");
+
+       /* String url =" ADD URL " ;
+        ProgressDialog pDialog;
+        pDialog = new ProgressDialog(this);
+        pDialog.setMessage("Please wait...");
+        pDialog.setCancelable(false);
+
+        JsonObjectRequest jsonObjReq = new JsonObjectRequest(Method.GET,
+                url, null, new Response.Listener<JSONObject>() {
+
+            @Override
+            public void onResponse(JSONObject response) {
+                Log.d(TAG, response.toString());
+
+                try {
+                    // Parsing json object response
+                    // response will be a json object
+
+                    String subject = response.getString("name");
+
+
+                    jsonResponse = "";
+                    jsonResponse += "Name: " + name + "\n\n";
+                    jsonResponse += "Email: " + email + "\n\n";
+                    jsonResponse += "Home: " + home + "\n\n";
+                    jsonResponse += "Mobile: " + mobile + "\n\n";
+
+                    txtResponse.setText(jsonResponse);
+
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                    Toast.makeText(getApplicationContext(),
+                            "Error: " + e.getMessage(),
+                            Toast.LENGTH_LONG).show();
+                }
+                hidepDialog();
+            }
+        }, new Response.ErrorListener() {
+
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                VolleyLog.d(TAG, "Error: " + error.getMessage());
+                Toast.makeText(getApplicationContext(),
+                        error.getMessage(), Toast.LENGTH_SHORT).show();
+                // hide the progress dialog
+                hidepDialog();
+            }
+        });
+
+        // Adding request to request queue
+        AppController.getInstance().addToRequestQueue(jsonObjReq);
+    }
+*/
+
+
+
+
+    com.aniapps.minipro.Subject s = new com.aniapps.minipro.Subject("MAKRI");
         slist.add(s);
 
         s = new com.aniapps.minipro.Subject("CGM");
